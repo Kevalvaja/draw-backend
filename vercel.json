@@ -12,6 +12,10 @@
       "dest": "/src/app.js"
     },
     {
+      "src": "/images/(.*)",
+      "dest": "/images/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/src/app.js"
     }
