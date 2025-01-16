@@ -11,6 +11,10 @@ app.use(cors());
 
 app.use("/images", express.static("images"));
 
+app.get('/', (req, res) => {
+    res.send("Server runnig on vercel application")
+})
+
 app.use("/api/svg-store", require('./routers/svg-router'));
 app.listen(PORT, () => {
     console.log(`Server is runing on PORT ${PORT}`)
